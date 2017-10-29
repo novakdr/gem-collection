@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!-- RESET -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<!-- GAME HEADER -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1>Crystal Collector!</h1>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	
+	<!-- INSTRUCTIONS -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p class="lead">You will be given a random number at the start of the game.</p>
+				<p class="lead">There are four crystals below. By clicking on a crystal you will a get specific amount of points added to your total score</p>
+				<p class="lead">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+				<p class="lead">The value of each crystal is hidden from you until you click on it.</p>
+				<p class="lead">Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- RANDOM NUMBER AND SCORE -->
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header bg-danger text-white">Random Number</div>
+					<div class="card-body"><h1 id="random-number">29</h1></div>
+					<br>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header">Score</div>
+					<div class="card-body">
+						<h3>Wins: <span id="wins">3</span></h3>
+						<h3>Losses: <span id="losses">4</span></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- CRYSTALS TO CHOOSE -->
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-3"><img src="assets/images/crystal1.jpg" alt="..." class="img-thumbnail" id="crystal-one"><h4 id="number-one"></h4></div>
+			<div class="col-3"><img src="assets/images/crystal2.png" alt="..." class="img-thumbnail" id="crystal-two"><h4 id="number-two"></h4></div>
+			<div class="col-3"><img src="assets/images/crystal3.png" alt="..." class="img-thumbnail" id="crystal-three"><h4 id="number-three"></span><span id="number-one"></span></div>
+			<div class="col-3"><img src="assets/images/crystal4.png" alt="..." class="img-thumbnail" id="crystal-four"><h4 id="number-four"></h4></div>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- USERS GUESS AND NEW ROUND BUTTON -->
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header bg-success text-white">Your total score is <span id="total-score">29</span></div>
+					<div class="card-body"><h1 id="user-guess">0</h1></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
