@@ -1,2 +1,2 @@
-# week-4-game
-Gem collecting game
+# Gem Collection
+A simple Gem Collecting Game that uses JQuery to dynamically update the pages.
